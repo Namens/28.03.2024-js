@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css.css">
+</head>
+<body>
+
+    <div class="div">
+    <!-- 1 -->
+    <div class="first">
+    <div id="container"></div>
+    <a href="#" class="btn-1">Жмякни</a>
+    </div>
+
+    <!-- 2 -->
+    <p class="text">Не наводи сюда</p>
+
+    <!-- 3 -->
+    <div class="third"></div>
+
+    <!-- 4 -->
+    <div class="four">
+    <a  href="#" class="btn-2">Показать!</a>
+    <div class="" id="fadeElement"></div>
+    </div>
+
+    <!-- 5 -->
+    <div class="five">
+        <a href="#" class="btn-3">Переместить</a>
+        <div class="moveElem" id=""></div>
+    </div>
+
+    <!-- 6 -->
+    <div class="six">
+        <a href="#" class="btn-4">Увеличить</a>
+        <div class="six-el"></div>
+    </div>
+    
+    <!-- 7 -->
+    <div class="seven">
+        <img src="/7img.jpg" alt="#" class="" id="myImage">
+    </div>
+
+
+    </div>
+
+    <div class="div2">
+         <!-- 8 -->
+    <div class="eight">
+        <a href="#" class="btn-5">Вращать</a>
+        <div class="" id="rotateElement"></div>
+    </div>
+
+    <!-- 9 -->
+    <div class="nine">
+        <a href="#" class="btn-6">Изменить границы</a>
+        <div class="border"></div>
+    </div>
+
+    <!-- 10 -->
+    <div class="ten">
+        <img src="10img.jpg" alt="#" class="hoverImage">
+    </div>
+    </div>
+
+
+    <div class="mathjs">
+        <!-- 11 -->
+        <div class="eleven">
+            <input id="num1" />
+
+            <div id="operator_btns">
+            <button id="plus" class="operator" onclick="op='+'">+</button>
+            <button id="minus" class="operator" onclick="op='-'">-</button>
+            <button id="times" class="operator" onclick="op='*'">*</button>
+            <button id="divide" class="operator" onclick="op='/'">/</button>
+            </div>
+            
+            <input id="num2" />
+            
+            <button onclick="func()" class="res">Показать результат</button>
+            
+            <p id="result"></p>
+        </div>
+
+        <!-- 12 -->
+        <div class="twelfth">
+            <h1 class="title-twelfth">Четное ли число</h1>
+            <input id="num3" />
+
+            <button onclick="funcs()" class="res">Проверить</button>
+            
+            <p id="result1"></p>
+        </div>
+
+        <!-- 13 -->
+        <div class="thirteenth">
+            <h1 class="title-thirteenth">Конвертировать валюту</h1>
+            <input id="num4" placeholder="Рубли"/>
+            
+            <select name="select" id="select">
+                <option class="value" value="value1" selected onclick="val='F'">Фунт</option>
+                <option class="value" value="value2" onclick="val='D'">Доллар</option>
+                <option class="value" value="value3" onclick="val='E'">Евро</option>
+              </select>
+
+            <button onclick="funcval()" class="res">Конвертировать</button>
+            
+            <p id="result2"></p>
+
+        </div>
+
+
+        <!-- 14 -->
+        <div class="fourteenth">
+            <h1 class="title-fourteenth">Расчет</h1>
+            <input id="num5" placeholder="Цена"/>
+            <input id="num6" placeholder="Кол-во товара"/>
+            
+            <button onclick="funcprice()" class="res">Рассчитать</button>
+            
+            <p id="result3"></p>
+        </div>
+
+    </div>
+
+    <div class="mathjs2">
+        <!-- 15 -->
+        <div class="fifteenth">
+            <h1 class="title-fourteenth">Квадратные уравнения</h1>
+            
+            <input id="num7" placeholder="a"/>
+            <input id="num8" placeholder="b"/>
+            <input id="num9" placeholder="c"/>
+
+            <button onclick="funcquad()" class="res">Решить</button>
+            
+            <div class="resultati">
+                <span>X1:</span><p id="result4"></p>
+                <span>X2:</span><p id="result5"></p>
+            </div>
+        </div>
+        
+        <!-- 16 -->
+        <div class="sixteenth">
+            <h1 class="title-sixteenth">Среднее значение</h1>
+            
+            <input id="num10" placeholder="Число 1"/>
+            <input id="num11" placeholder="Число 2"/>
+            <input id="num12" placeholder="Число 3"/>
+
+            <button onclick="funcsred()" class="res">Рассчитать</button>
+            
+            <p id="result6"></p>
+        </div>
+
+        <!-- 17 -->
+        <div class="seventeenth">
+            <h1 class="title-seventeenth">Простое ли число</h1>
+            
+            <input id="num13" placeholder="Число"/>
+
+            <button onclick="funcsimple()" class="res">Рассчитать</button>
+            
+            <p id="result7"></p>
+        </div>
+
+        <!-- 18 -->
+        <div class="eighteenth">
+            <h1 class="title-eighteenth">Факториала числа</h1>
+            
+            <input id="num14" placeholder="Число"/>
+            
+            <button onclick="funcfact()" class="res">Рассчитать</button>
+            
+            <p id="result8"></p>
+        </div>
+    </div>
+
+    <div class="mathjs3">
+        <!-- 19 -->
+        <div class="nineteenth">
+            <h1 class="title-nineteenth">Налог</h1>
+            
+            <input id="num15" placeholder="Введите сумму"/>
+
+            <select name="select" id="select">
+                <option class="value" value="value1" selected onclick="nal='13'">НДС 13%</option>
+                <option class="value" value="value2" onclick="nal='9'">Госпошлина 9%</option>
+                <option class="value" value="value3" onclick="nal='15'">НДФЛ 15%</option>
+              </select>
+            
+              <button onclick="funcnalog()" class="res">Рассчитать</button>
+            
+              <p id="result9"></p>
+
+            </div>
+
+            <!-- 20 -->
+            <div class="twentieth">
+                <h1 class="title-twentieth">Кратность числа</h1>
+
+                <input id="num16" placeholder="Число"/>
+
+                <input id="num17" placeholder="Число"/>
+
+                <button onclick="funckrat()" class="res">Рассчитать</button>
+            
+              <p id="result10"></p>
+
+        </div>
+    
+    <script src="./app.js"></script>
+    <script src="./mathjs.js"></script>
+</body>
+</html>
